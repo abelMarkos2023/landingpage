@@ -1,0 +1,104 @@
+.pricing{
+    background-color: FFF;
+    /* height: 100vh; */
+    font-family: "Barlow Condensed", system-ui;   
+    padding: 2rem; 
+    color: #CC5500;
+}
+.pricing-heading{
+    font-size: 4rem;
+    color: #2F1C6A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricing-subtitle{
+    text-align: center;
+    color: blue;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.plans{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+    /* perspective: 1000px; */
+    
+}
+.plan-card{
+    padding: 1rem;
+    background-color: #F8F8F8;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    box-shadow: 3px 6px 9px #2F1C6A;
+}
+.plan-card.premium{
+    background-color: rgb(173, 200, 239);
+    /* transform: scale3d(1.1,1.1,1.1); */
+    border: 1px solid #2F1C6A;
+    /* z-index: 1 !important; */
+}
+.plan-name{
+    color: #2F1C6A;
+    font-size: 1.3rem;
+}
+.plan-desc{
+    color: #2F1C6A;
+    font-size: 1rem;
+}
+.plan-price{
+    font-size: 1.4rem;
+    color: gray;
+}
+.plan-price strong{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #2F1C6A;
+}
+.plan-card .price-btn{
+    display: inline-block;
+    margin-block: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #2F1C6A;
+    color: #2F1C6A;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.plan-card.premium .price-btn{
+    background-color: #2F1C6A;
+    color: #F8F8F8;
+}
+.plan-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    color: #2F1C6A;
+}
+
+@media (width < 43rem){
+    .pricing{
+        padding: 2rem 0.5rem;
+    }
+    .plans{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .plan-card.premium{
+        /* transform: scale3d(1,1,1) !important; */
+    }
+}
+@media (width < 25rem){
+    .plans{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .pricing-heading{
+        font-size: 1.5rem;
+    }
+}

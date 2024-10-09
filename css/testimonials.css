@@ -1,0 +1,96 @@
+.testemonials{
+    position: relative;
+    /* z-index: 9; */
+    padding: 2rem;
+    /* min-height: 100vh; */
+    background-color: #FF8C00;
+    transition: all 400ms ease-in-out;
+
+}
+
+.testemonials div{
+    transition: all 400ms ease-in-out;
+
+}
+.wrapper{
+    width: 100%;
+    /* position: relative; */
+    /* z-index: 1; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1rem;
+    row-gap: 5rem;
+
+}
+.testemonial{
+    padding: 5rem 2rem 1rem 2rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0, 0.2);
+}
+.testemonials-heading{
+    font-size: 3rem;
+    padding: 5rem 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testemonial img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+}
+.testemonial-text{
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "Playfair Display" serif;
+}
+.author{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.testemonial-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.testemonial-company{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media (width < 25rem){
+    .testemonials{
+        padding: 4rem 1rem;   
+     }
+     .testemonial{
+        padding-inline: 2rem 0.5rem;
+     }
+     .testemonial-text{
+        font-size: 1rem;
+     }
+     .testemonial img{
+        width: 6rem;
+        height: 6rem;
+     }
+     .wrapper{
+        grid-template-columns: repeat(auto-fill,minmax(18rem ,1fr));
+     }
+     .testemonials-heading{
+        padding: 4rem 0.5rem;
+        font-size: 1.2rem;
+     }
+}

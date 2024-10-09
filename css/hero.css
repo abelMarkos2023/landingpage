@@ -1,0 +1,96 @@
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/09.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   position: relative;
+   z-index: -2;
+    margin-top: 8vh;
+}
+.hero-text{
+   
+    padding: 4rem 3rem;
+    width: 65vw;
+}
+.hero-heading{
+    font-size: 5rem;
+    color: #ddd;
+    font-family: "Kaushan Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+.hero-content{
+    font-family: "Edu AU VIC WA NT Guides", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    color: #ccc;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.view{
+    padding: 0.5rem 1.5rem;
+    background-color: orange;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 3px 6px 12px rgba(0,0,0,0.6);
+    font-family: "Old Standard TT", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+@media (width < 80rem){
+
+    .hero-text{
+        width : 80vw;
+    }
+    .hero-heading{
+        font-size: 4rem;
+    }
+    .hero-content{
+        font-size: 2.5rem;
+
+    }
+}
+
+@media (width < 63rem){
+   
+    .hero-text{
+        
+        padding: 2rem 1rem;
+        width: 90vw;
+    }
+    .hero-heading{
+        font-size: 2rem;
+    }
+    .hero-content{
+        font-size: 2rem;
+    }
+}
+@media (width < 40rem){
+    .hero-text{
+        padding: 2rem 1rem;
+    }
+    .hero-heading{
+        font-size: 2rem;
+    }
+    .hero-content{
+        font-size: 1.5rem;
+    }
+}
+
+@media (width < 22rem){
+
+    .hero-text{
+        padding: 2rem 0.5rem;
+    }
+    .hero-heading{
+        font-size: 1.8rem;
+    }
+    .hero-content{
+        font-size: 1.4rem;
+    }
+}
