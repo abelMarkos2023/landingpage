@@ -56,4 +56,4 @@ ex Adding a nav item
 
 ## project demo on netlify
 
-    [ffflandingpage.netlify.app](https://ffflandingpage.netlify.app/)
+[project demo](https://ffflandingpage.netlify.app/)
